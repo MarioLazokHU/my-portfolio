@@ -12,19 +12,19 @@ export function createFooter() {
   });
   const linkedInLogo = createEl("img", {
     className: "contact-logo",
-    src: "../media/linkedin.png",
+    src: "./media/linkedin.png",
   });
   const github = createEl("a", { href: "https://github.com/MarioLazokHU" });
   const githubLogo = createEl("img", {
     className: "contact-logo",
-    src: "../media/github.png",
+    src: "./media/github.png",
   });
   const facebook = createEl("a", {
     href: "https://www.facebook.com/mario.lazok.18",
   });
   const facebookLogo = createEl("img", {
     className: "contact-logo",
-    src: "../media/facebook.png",
+    src: "./media/facebook.png",
   });
   linkedIn.append(linkedInLogo);
   github.append(githubLogo);

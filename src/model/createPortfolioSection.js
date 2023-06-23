@@ -9,7 +9,7 @@ export function createPortfolioSection() {
     textContent: "My latest work",
   });
   const portfolioCard1 = createEl("div", { className: "portfolio-card" });
-  const portfolioPic1 = createEl("img", { className: "portfolio-pic" , src:"../../media/webshop.png"});
+  const portfolioPic1 = createEl("img", { className: "portfolio-pic" , src:"./media/webshop.png"});
   const portfolioName1 = createEl("p", {
     className: "portfolio-name",
     textContent: "Webshop App",
