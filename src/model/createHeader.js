@@ -2,13 +2,16 @@ import { createEl } from "../utils/createEl.js"
 
 export function createHeader(){
 
-    const header = createEl("header")
+    const header = createEl("header",{id:"header"})
     
     const logo = createEl("img",{className: "logo", src:"../media/logo.png"})
     const nav = createEl("nav")
 
+    const aAboutBtn = createEl("a",{href:"#main"})
     const aboutBtn = createEl("div", {className: "about-btn", textContent:"about"})
+    const aPortfolioBtn = createEl("a",{href:"#portfolio"})
     const portfolioBtn = createEl("div",{className:"portfolio-btn", textContent:"portfolio"})
+    const aBlogBtn = createEl('a',{href:"#blog"})
     const blogBtn = createEl("div", {className: "blog-btn", textContent:"blog"})
     const contactBtn = createEl("div", {className: "contact-btn", textContent:"contact"})
 
@@ -24,7 +27,11 @@ export function createHeader(){
     facebook.append(facebookLogo)
     contactsLogoCon.append(linkedIn, github, facebook)
 
-    nav.append(aboutBtn,portfolioBtn,blogBtn,contactBtn)
+    aAboutBtn.append(aboutBtn)
+    aPortfolioBtn.append(portfolioBtn)
+    aBlogBtn.append(blogBtn)
+
+    nav.append(aAboutBtn,aPortfolioBtn,aBlogBtn,contactBtn)
 
     header.append(logo, nav, contactsLogoCon)
 

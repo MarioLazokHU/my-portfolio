@@ -2,7 +2,7 @@ import { createEl } from "../utils/createEl.js";
 
 export function createPortfolioSection() {
   const portfolioSection = createEl("section", {
-    className: "portfolio-section",
+    className: "portfolio-section", id:"portfolio"
   });
   const portfolioTitle = createEl("p", {
     className: "portfolio-title",
@@ -17,7 +17,7 @@ export function createPortfolioSection() {
   const portfolioDesc = createEl("p", {
     className: "portfolio-desc",
     textContent:
-      "Created with JS & Node, the admin login is just an 'a'. This service running in Render if the app is can't load just wait 1 min",
+      "Created with JS & Node, the admin login is just an 'a'. This service running in 'Render Service' if the app is can't load just wait a min.",
   });
   const link1 = createEl("a", {
     href: "https://webshop-prototype.onrender.com/",

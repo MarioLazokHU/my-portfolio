@@ -1,7 +1,7 @@
 import { createEl } from "../utils/createEl.js";
 
 export function createContactsAside(){
-  const aside = createEl("aside",{className:"hidden"})
+  const aside = createEl("aside",{className:"hidden",id:"contact"})
 
   const contactsTitle = createEl("p",{className:"contacts-title",textContent:"Contacts"})
   

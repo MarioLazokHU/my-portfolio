@@ -2,7 +2,7 @@ import { createEl } from "../utils/createEl.js";
 
 export function createFooter() {
 
-  const footer = createEl("footer")
+  const footer = createEl("footer",{id:"footer"})
 
   const rights = createEl("div",{className:"rights", textContent:"®2023 Mario Lazok"})
 
