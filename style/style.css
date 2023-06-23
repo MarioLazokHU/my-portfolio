@@ -48,8 +48,8 @@ nav{
   bottom: -100px;
   left: 50%;
   transform: translate(-50%);
-  width: 1000px;
-  height: 800px;
+  width: 650px;
+  height: 600px;
   background-image: url("../media/html.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ a{
   background-color: #fafafa;
   box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.507);
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -251,7 +251,7 @@ form>button:hover{
 }
 .blog-section{
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 50px;
   position: relative;
 }
