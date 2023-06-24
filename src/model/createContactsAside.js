@@ -6,6 +6,7 @@ export function createContactsAside(){
   const contactsTitle = createEl("p",{className:"contacts-title",textContent:"Contacts"})
   
   const myContactsCon = createEl("div",{className:"my-contacts"})
+  const close = createEl("button",{textContent:"✖",className:"close"})
   const name = createEl("p",{className:"name", textContent:"Mario Lazok"})
   const email = createEl("p", {className:"email", textContent:"e-mail: lazokmarios7@gmail.com"})
   const mobile = createEl("p",{className:"mobile", textContent:"mobile: +36 30 162 5663"})
@@ -25,7 +26,7 @@ export function createContactsAside(){
 
   const submitButton = createEl("button", { type: "submit", textContent: "Send me an e-mail" });
 
-  myContactsCon.append(name, email, mobile)
+  myContactsCon.append(close, name, email, mobile)
 
   form.append(emailLabel, messageLabel, submitButton);
 

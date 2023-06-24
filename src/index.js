@@ -5,6 +5,8 @@ import { createFooter } from "./model/createFooter.js";
 import { createPortfolioSection } from "./model/createPortfolioSection.js";
 import { createContactsAside } from "./model/createContactsAside.js";
 import { contactHandler } from "./controller/contactHandler.js";
+import { createHamburger } from "./model/createHamburger.js";
+import { contactCloseBtn } from "./controller/contactCloseBtn.js";
 
 function main() {
   const root = document.getElementById("root");
@@ -12,10 +14,12 @@ function main() {
     createHeader(),
     createMain(),
     createPortfolioSection(),
-    createContactsAside(),
     createBlogSection(),
+    createContactsAside(),
     createFooter(),
     );
     contactHandler();
+    createHamburger()
+    contactCloseBtn()
 }
 main();
