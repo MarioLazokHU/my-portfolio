@@ -398,6 +398,7 @@ footer{
   #contact{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     position: static;
     top: none;
