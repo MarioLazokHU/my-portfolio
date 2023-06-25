@@ -128,11 +128,12 @@ a{
 
 .portfolio-card{
   width: 400px;
-  height: fit-content;
+  height: 400px;
   background-color: white;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.507);
   padding: 10px;
   border-radius: 1px;
+  position: relative;
 }
 
 .portfolio-pic{
@@ -150,8 +151,10 @@ a{
 }
 .portfolio-card>a>button{
   background-color: #01010117;
-  width: 100%;
+  width: 380px;
   height: 40px;
+  position: absolute;
+  bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   border: none;
