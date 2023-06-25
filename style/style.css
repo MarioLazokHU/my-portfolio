@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+label{
+  margin-top: 20px;
+}
 body{
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
@@ -67,6 +70,16 @@ main{
   position: relative;
   overflow: hidden;
 }
+.main-title{
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.559)
+}
 
 .left-text-box, .right-text-box{
   display: flex;
@@ -82,7 +95,7 @@ a{
 
 
 .right-title, .left-title{
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -180,6 +193,7 @@ a{
   color: white;
 }
 #contact>form>button{
+  margin-top: 20px;
   background-color: white;
 }
 form{
@@ -261,18 +275,32 @@ form>button:hover{
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.559)
 }
 .blog-card{
   margin-top: 30px;
 }
 .blog-title{
   font-weight: 700;
-  margin-bottom: 10px;
+  width: 100%;
+  text-align: start;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-bottom: 20px;
 }
 .blog-post{
   text-align: justify;
+  background-color: #212121cd;
+  color: #cac3c3;
+  width: 100%;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.607);
 }
 footer{
   display: flex;
@@ -383,7 +411,7 @@ footer{
     opacity: 0.5;
    }
    main{
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 20%;
     justify-content: space-around;
     align-items: center;
