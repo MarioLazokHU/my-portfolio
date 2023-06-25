@@ -3,7 +3,7 @@ import { createEl } from "../utils/createEl.js";
 export function createContactsAside(){
   const aside = createEl("aside",{className:"hidden",id:"contact"})
 
-  const contactsTitle = createEl("p",{className:"contacts-title",textContent:"Contacts"})
+  const contactsTitle = createEl("p",{className:"contacts-title",textContent:"[Contacts]"})
   
   const myContactsCon = createEl("div",{className:"my-contacts"})
   const close = createEl("button",{textContent:"✖",className:"close"})

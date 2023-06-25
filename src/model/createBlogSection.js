@@ -5,7 +5,7 @@ export function createBlogSection() {
 
 
     const blogSection = createEl("section", { className: "blog-section", id:"blog"});
-    const blogTitle = createEl("p", { className: "blog", textContent: "My Blog" });
+    const blogTitle = createEl("p", { className: "blog", textContent: "[My Blog]" });
     const blogPostCard1 = createEl("div", { className: "blog-card" });
     const blogPostTitle1 = createEl("p", { className: "blog-title", textContent: data.blogtitle1 });
     const blogPost1 = createEl("div", {className:"blog-post", textContent: data.blog1})

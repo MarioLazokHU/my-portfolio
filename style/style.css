@@ -76,7 +76,7 @@ main{
   left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.559)
 }
@@ -117,7 +117,7 @@ a{
 
 .portfolio-title{
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
@@ -171,6 +171,7 @@ a{
   transform: translateX(200%);
   top: 150px;
   right: 100px;
+  width: 25%;
 
   
 }
@@ -231,10 +232,11 @@ form>button:hover{
 }
 
 .contacts-title{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .about-btn:hover,
 .portfolio-btn:hover,
@@ -276,7 +278,7 @@ form>button:hover{
   left: 50%;
   transform: translateX(-50%);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.559)
 }

@@ -3,7 +3,7 @@ import { createEl } from "../utils/createEl.js";
 export function createMain(){
     const main = createEl("main", {id:"main"})
 
-    const mainTitle = createEl("p",{className:"main-title", textContent:"About Me"})
+    const mainTitle = createEl("p",{className:"main-title", textContent:"[About Me]"})
 
     const leftTextBox = createEl("div",{className:"left-text-box"})
     const leftTitle = createEl("p",{className: "left-title", textContent:"{integrationist}"})

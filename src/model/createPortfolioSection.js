@@ -6,7 +6,7 @@ export function createPortfolioSection() {
   });
   const portfolioTitle = createEl("p", {
     className: "portfolio-title",
-    textContent: "My latest work",
+    textContent: "[My latest work]",
   });
   const portfolioCard1 = createEl("div", { className: "portfolio-card" });
   const portfolioPic1 = createEl("img", { className: "portfolio-pic" , src:"./media/webshop.png"});
