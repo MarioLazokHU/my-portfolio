@@ -17,7 +17,7 @@ export function createPortfolioSection() {
   const portfolioDesc1 = createEl("p", {
     className: "portfolio-desc",
     textContent:
-      "Created with JS & Node, the admin login is just an 'a'. This running in 'Render Service' if the app is can't load just wait a min.",
+      "Created with JS & Node, the admin login is just an 'a'. This running in 'Render Service' if the app is can't load just wait a min and refresh.",
   });
   const link1 = createEl("a", {
     href: "https://webshop-prototype.onrender.com/",
@@ -37,7 +37,7 @@ export function createPortfolioSection() {
   const portfolioDesc2 = createEl("p", {
     className: "portfolio-desc",
     textContent:
-      "Created with JS & Node, you can upload pictures. !!!Only desktop!!! This running in 'Render Service' if the app is can't load just wait a min.",
+      "Created with JS & Node, you can upload pictures. !!!Only desktop!!! This running in 'Render Service' if the app is can't load just wait a min and refresh.",
   });
   const link2 = createEl("a", {
     href: "https://image-gallery-4p7y.onrender.com",
