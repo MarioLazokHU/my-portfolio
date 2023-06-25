@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 label{
-  margin-top: 20px;
+  margin-top: 0;
 }
 body{
   font-size: 20px;
@@ -97,6 +97,7 @@ a{
 .right-title, .left-title{
   font-size: 40px;
   font-weight: 700;
+  text-align: justify;
 }
 
 .left-p, .right-p{
@@ -409,6 +410,9 @@ footer{
   }
   
   @media (max-width: 700px) {
+    .right-title, .left-title{
+      text-align: center;
+    }
     .portfolio-section{
       flex-direction: column;
       padding: 0;
@@ -417,7 +421,7 @@ footer{
       font-weight: 700;
     }
    .background{
-    opacity: 0.3;
+    opacity: 0.1;
    }
    main{
     flex-direction: column-reverse;
@@ -432,11 +436,10 @@ footer{
     font-size: 30px;
    }
   .portfolio-pic{
-    width: 300px;
+    width: 380px;
   }
   .portfolio-card{
     margin: 5px;
-
   }
   .portfolio-title{
     font-size: 22px;
@@ -444,6 +447,7 @@ footer{
   #contact{
     width: 100%;
     display: flex;
+    padding: 20px;
     flex-direction: column;
     justify-content: center;
     position: static;
@@ -460,7 +464,7 @@ footer{
   }
 
   .logo{
-    width: 250px;
+    width: 200px;
   }
   header{
     width: 100%;
@@ -468,14 +472,15 @@ footer{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: start;
-    gap: 60px;
-    position: fixed;
+    justify-content: space-between;
   }
   .hamb-con{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
-    width: 100%;
+    width: 80px;
+    height: 80px;
   }
   .contacts-logo-con{
     display: none;
