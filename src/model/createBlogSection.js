@@ -18,7 +18,7 @@ export function createBlogSection() {
   });
   const blogPost1 = createEl("div", {
     className: "blog-post",
-    innerHTML: `${data.blog1} <br><br> Posted at: 2023.06.24.`
+    innerHTML: `${data.blog1} <br><br><a href="https://github.com/MarioLazokHU/webshop-prototype">Github Repository</a><br> Posted at: 2023.06.25.`
   });
 
   blogPost1.prepend(blogPostTitle1);
@@ -32,7 +32,7 @@ export function createBlogSection() {
   });
   const blogPost2 = createEl("div", {
     className: "blog-post",
-    innerHTML: `${data.blog2} <br><br> Posted at: 2023.06.25.`
+    innerHTML: `${data.blog2} <br><br><a href="https://github.com/MarioLazokHU/image-gallery">Github Repository</a><br> Posted at: 2023.06.25.`
   });
 
   blogPost2.prepend(blogPostTitle2);
