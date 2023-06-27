@@ -553,4 +553,29 @@ footer{
       border-bottom: 1px solid #444;
     }
   }
+
+  @media (max-width: 400px) {
+    .main-title{
+      top: 85px
+    }
+    .portfolio-card{
+      width: 370px;
+      margin: none;
+      padding: 5px
+    }
+    .portfolio-pic{
+      width: 360px;
+    }
+    .portfolio-card>a>button{
+      width: 360px;
+    }
+    .blog{
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+  @media (min-width: 2000px) {
+
+  }
   
