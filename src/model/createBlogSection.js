@@ -2,7 +2,6 @@ import { createEl } from "../utils/createEl.js";
 import { data } from "../../media/blogpost.js";
 
 export function createBlogSection() {
-
   const blogSection = createEl("section", {
     className: "blog-section",
     id: "blog",
@@ -11,33 +10,24 @@ export function createBlogSection() {
     className: "blog",
     textContent: "[My Blog]",
   });
-  const blogPostCard1 = createEl("div", { className: "blog-card" });
-  const blogPostTitle1 = createEl("p", {
-    className: "blog-title",
-    textContent: data.blogtitle1,
-  });
-  const blogPost1 = createEl("div", {
-    className: "blog-post",
-    innerHTML: `${data.blog1} <br><br><a href="https://github.com/MarioLazokHU/webshop-prototype">Github Repository</a><br> Posted at: 2023.06.25.`
-  });
 
-  blogPost1.prepend(blogPostTitle1);
-  blogPostCard1.append(blogPost1);
-  blogSection.append(blogTitle, blogPostCard1);
-  
-  const blogPostCard2 = createEl("div", { className: "blog-card" });
-  const blogPostTitle2 = createEl("p", {
-    className: "blog-title",
-    textContent: data.blogtitle2,
-  });
-  const blogPost2 = createEl("div", {
-    className: "blog-post",
-    innerHTML: `${data.blog2} <br><br><a href="https://github.com/MarioLazokHU/image-gallery">Github Repository</a><br> Posted at: 2023.06.25.`
-  });
+  blogSection.append(blogTitle);
 
-  blogPost2.prepend(blogPostTitle2);
-  blogPostCard2.append(blogPost2);
-  blogSection.append(blogPostCard2);
+  for (let i = 1; i <= Object.keys(data).length / 3; i++) {
+    const blogPostCard = createEl("div", { className: "blog-card" });
+    const blogPostTitle = createEl("p", {
+      className: "blog-title",
+      textContent: data[`blogtitle${i}`],
+    });
+    const blogPost = createEl("div", {
+      className: "blog-post",
+      innerHTML: `${data[`blog${i}`]} <br><br> Posted at: ${data[`date${i}`]}`
+    });
+
+    blogPost.prepend(blogPostTitle);
+    blogPostCard.append(blogPost);
+    blogSection.append(blogPostCard);
+  }
 
   return blogSection;
 }
