@@ -422,6 +422,17 @@ footer{
   }
   
   @media (max-width: 916px) {
+    .blog{
+      top:-20px;
+    }
+    .blog-section{
+      margin-top: 45px;
+      padding: 5px;
+    }
+    .main-title{
+      width: 100%;
+      text-align: center;
+    }
     .right-title, .left-title{
       text-align: center;
     }
@@ -570,6 +581,10 @@ footer{
     .main-title{
       top: 85px
     }
+    .blog-section{
+      margin-top: 45px;
+      padding: 5px;
+    }
     .portfolio-card{
       width: 370px;
       margin: none;
@@ -590,4 +605,65 @@ footer{
   @media (min-width: 2000px) {
 
   }
-  
+  @media (max-height: 641px){
+    .main-title{
+      display: none;
+    }
+  }
+  @media (max-width: 321px) {
+    .portfolio-pic{
+      width: 300px;
+    }
+    .portfolio-card{
+      width: 310px;
+    }
+    .portfolio-card>a>button {
+      width: 300px;
+    }
+  }
+  @media (max-width: 361px) {
+    .portfolio-pic{
+      width: 300px;
+    }
+    .portfolio-card{
+      width: 310px;
+    }
+    .portfolio-card>a>button {
+      width: 300px;
+    }
+  }
+  @media (max-height: 480px){
+    .main-title{
+      display: none;
+    }
+    main{
+      height: 480px;
+    }
+    .left-title, .right-title{
+      display: none;
+    }
+    .main-title{
+      display: none;
+    }
+  }
+  @media (max-width: 280px) {
+    .main-title{
+      display: none;
+    }
+    .portfolio-pic{
+      width: 260px;
+    }
+    .portfolio-card{
+      width: 270px;
+    }
+    .portfolio-card>a>button {
+      width: 260px;
+    }
+    .left-title, .right-title{
+      font-size: 30px;
+    }
+    .right-p,.left-p{
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+  }
