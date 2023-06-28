@@ -12,8 +12,9 @@ export function createBlogSection() {
   });
 
   blogSection.append(blogTitle);
+  const numBlogs = Object.keys(data).length / 4;
 
-  for (let i = 1; i <= Object.keys(data).length / 3; i++) {
+  for (let i = numBlogs; i >= 1; i--) {
     const blogPostCard = createEl("div", { className: "blog-card" });
     const blogPostTitle = createEl("p", {
       className: "blog-title",
@@ -21,13 +22,18 @@ export function createBlogSection() {
     });
     const blogPost = createEl("div", {
       className: "blog-post",
-      innerHTML: `${data[`blog${i}`]} <br><br> Posted at: ${data[`date${i}`]}`
+      innerHTML: `${data[`blog${i}`]} <br><br> Posted at: ${data[`date${i}`]}`,
     });
-
+    if (data[`git${i}`]) {
+      blogPost.innerHTML = `${data[`blog${i}`]} <br><br>Github: ${data[`git${i}`]}<br><br> Posted at: ${data[`date${i}`]}`;
+    }
+  
     blogPost.prepend(blogPostTitle);
     blogPostCard.append(blogPost);
     blogSection.append(blogPostCard);
   }
+  
+  
 
   return blogSection;
 }

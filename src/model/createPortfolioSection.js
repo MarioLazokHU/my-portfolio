@@ -37,10 +37,10 @@ export function createPortfolioSection() {
   const portfolioDesc2 = createEl("p", {
     className: "portfolio-desc",
     textContent:
-      "Created with JS & Node, you can upload pictures. !!!Only desktop!!! This running in 'Render Service' if the app is can't load just wait a min and refresh.",
+      "Created with JS & Node, you can upload pictures. !Upload & Delete function is Disabled! This running in 'Render Service' if the app is can't load just wait a min and refresh.",
   });
   const link2 = createEl("a", {
-    href: "https://image-gallery-4p7y.onrender.com",
+    href: "https://image-gallery-n1oq.onrender.com/",
   });
   const goToButton2 = createEl("button", { textContent: "Go To App" });
   link2.append(goToButton2);

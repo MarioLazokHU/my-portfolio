@@ -9,5 +9,10 @@ export const data = {
     date2:"2023.06.26.",
     blogtitle3 : "Downloadable CV",
     blog3 :"My CV is already done and ready for download. You can access and download it from the 'contacts' section.",
+    git3:"",
     date3:"2023.06.27.",
+    blogtitle4 : "Image Gallery upload & delete function has been disabled",
+    blog4 :"I would like to announce an important change in our image gallery. Unfortunately, over the past period, explicit images were uploaded to the site by bots and as a result, I had to disable the user upload and deletion functionalities.",
+    git4:"",
+    date4:"2023.06.28.",
 }
