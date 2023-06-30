@@ -15,4 +15,8 @@ export const data = {
     blog4 :"I would like to announce an important change in our image gallery. Unfortunately, over the past period, explicit images were uploaded to the site by bots and as a result, I had to disable the user upload and deletion functionalities.",
     git4:"",
     date4:"2023.06.28.",
+    blogtitle5 : "Image Gallery",
+    blog5 :"The upload function is already work now, with cooldown limit (1 min).",
+    git5:"",
+    date5:"2023.06.30.",
 }
